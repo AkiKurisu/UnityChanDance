@@ -18,13 +18,13 @@ This project supports Unity 2021.3.18f1 and above
 - The Shader used by UnityChan is [unity3d-jp-Unity-Chan Toon Shader 2.0](https://github.com/unity3d-jp/UnityChanToonShaderVer2_Project) version 1.5.1 (additionally fixed bugs compatible with URP12 and above (https: //github.com/unity3d-jp/UnityChanToonShaderVer2_Project/issues/122))
 - VMDPlayer is modified from [hobosore-UnityVMDPlayer](https://github.com/hobosore/UnityVMDPlayer)
 
-## [Plugin Description]
+## 【Plugin Description】
 
 1. The Build version uses the paid plugin [Magica Cloth 2](https://assetstore.unity.com/packages/tools/physics/magica-cloth-2-242307) for mesh-based cloth and hair simulation. not included in this project
 2. If there is no above-mentioned plugin, you can use External/UnityChan/Prefabs/UnityChan_Legacy to perform, that is, use UnityChan's native Spring components completely
 3. If you have Magica Cloth 2, you can use External/UnityChan/Prefabs/UnityChan_Pro to perform for better visual effects
 
-## [How to play MMD]
+## 【How to play MMD】
 1. Enter the game Data directory (Assets folder in Editor)
 2. Place the .vmd file and .wav audio in the recorded VMD folder
 3. The configuration table is the UserConfig.json file in this directory
