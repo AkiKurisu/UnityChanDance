@@ -1,6 +1,6 @@
 # Introduction to Unity Chan Dance
 
-***Read this document in other languages: [Chinese document](./README_ZH.md)***
+***Read this document in other languages: [中文文档](./README_ZH.md)***
 
 <img width=800 src="Images/Splash.png">
 
