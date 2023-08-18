@@ -1,4 +1,0 @@
-repository "urp-unitychan-stage-master@elomangasensei@cloud.cn"
-  path "/"
-    br "/main"
-    co "/main"
