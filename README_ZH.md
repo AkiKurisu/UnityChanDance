@@ -8,6 +8,10 @@
 
 本项目支持Unity 2021.3.18及以上
 
+## 【打包下载】
+
+### [UnityChanDance.zip](https://github.com/AkiKurisu/UnityChanDance/releases/download/V0.1/UnityChanDance.zip)
+
 ## 【项目说明】
 - 本项目升级自[unity3d-jp-Unity-Chan "Candy Rock Star"](https://github.com/unity3d-jp/unitychan-crs),
 - URP版本舞台来自[ctiao-urp-unitychan-stage](https://github.com/ctiao/urp-unitychan-stage)
