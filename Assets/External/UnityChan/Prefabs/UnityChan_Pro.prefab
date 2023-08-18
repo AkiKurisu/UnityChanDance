@@ -8603,15 +8603,15 @@ MonoBehaviour:
       blendShapeParameters:
       - blendShapeIndex: 2
     - morphName: "\u7B11\u9854"
-      skinnedMeshRenderer: {fileID: 8222103858858367562}
+      skinnedMeshRenderer: {fileID: 8222103858858367560}
       blendShapeParameters:
       - blendShapeIndex: 1
     - morphName: "\u307E\u3070\u305F\u304D"
-      skinnedMeshRenderer: {fileID: 8222103858858367562}
+      skinnedMeshRenderer: {fileID: 8222103858858367560}
       blendShapeParameters:
       - blendShapeIndex: 6
     - morphName: "\u3073\u3063\u304F\u308A"
-      skinnedMeshRenderer: {fileID: 8222103858858367562}
+      skinnedMeshRenderer: {fileID: 8222103858858367560}
       blendShapeParameters:
       - blendShapeIndex: 2
 --- !u!114 &8222103859009181430
