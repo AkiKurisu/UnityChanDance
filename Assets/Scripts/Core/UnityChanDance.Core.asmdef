@@ -1,0 +1,17 @@
+{
+    "name": "UnityChanDance.Core",
+    "rootNamespace": "UnityChanDance.Core",
+    "references": [
+        "GUID:75379f384d807bc4ebe231198f0f6053",
+        "GUID:3f3bdbb2a534088458a2c4141c928127"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

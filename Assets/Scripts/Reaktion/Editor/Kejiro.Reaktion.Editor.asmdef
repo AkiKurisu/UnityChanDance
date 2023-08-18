@@ -1,0 +1,18 @@
+{
+    "name": "Kejiro.Reaktion.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:e4097dd9b786256458642a948f9d5368"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

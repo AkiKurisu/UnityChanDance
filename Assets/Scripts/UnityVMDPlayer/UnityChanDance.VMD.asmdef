@@ -1,0 +1,16 @@
+{
+    "name": "UnityChanDance.VMD",
+    "rootNamespace": "UnityChanDance.VMD",
+    "references": [
+        "GUID:84fb69df4df282b4b917a7fb15d914a0"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

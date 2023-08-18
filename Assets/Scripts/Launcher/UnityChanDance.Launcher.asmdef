@@ -1,0 +1,17 @@
+{
+    "name": "UnityChanDance.Launcher",
+    "rootNamespace": "UnityChanDance.Launcher",
+    "references": [
+        "GUID:3f3bdbb2a534088458a2c4141c928127",
+        "GUID:40bae9265b0b3fd449b8abe0255edc71"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

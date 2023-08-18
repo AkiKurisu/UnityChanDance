@@ -1,0 +1,14 @@
+{
+    "name": "Kejiro.Reaktion",
+    "rootNamespace": "Kejiro.Reaktion",
+    "references": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
