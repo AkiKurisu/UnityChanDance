@@ -8,6 +8,12 @@
 
 本项目支持Unity 2021.3.18及以上
 
+## 【演示视频】
+
+https://www.bilibili.com/video/BV1Pj411z7p3/
+
+<img width=800 src="Images/Sample.png">
+
 ## 【打包下载】
 
 ### [UnityChanDance.zip](https://github.com/AkiKurisu/UnityChanDance/releases/download/V0.1/UnityChanDance.zip)

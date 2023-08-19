@@ -8,11 +8,17 @@
 
 This project supports Unity 2021.3.18f1 and above
 
+## 【Demo Video】
+
+https://www.bilibili.com/video/BV1Pj411z7p3/
+
+<img width=800 src="Images/Sample.png">
+
 ## 【Build Version Download】
 
 ### [UnityChanDance.zip](https://github.com/AkiKurisu/UnityChanDance/releases/download/V0.1/UnityChanDance.zip)
 
-## 【project instruction】
+## 【Project Instruction】
 - This project is upgraded from [unity3d-jp-Unity-Chan "Candy Rock Star"](https://github.com/unity3d-jp/unitychan-crs),
 - URP version stage comes from [ctiao-urp-unitychan-stage](https://github.com/ctiao/urp-unitychan-stage)
 - The Shader used by UnityChan is [unity3d-jp-Unity-Chan Toon Shader 2.0](https://github.com/unity3d-jp/UnityChanToonShaderVer2_Project) version 1.5.1 (additionally fixed bugs compatible with URP12 and above (https: //github.com/unity3d-jp/UnityChanToonShaderVer2_Project/issues/122))
