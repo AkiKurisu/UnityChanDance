@@ -4,5 +4,6 @@ namespace UnityChanDance.Core
     {
         public string AudioPath { get; set; }
         public string VMDPath { get; set; }
+        public string CameraPath { get; set; }
     }
 }

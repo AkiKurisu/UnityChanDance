@@ -2338,6 +2338,7 @@ MonoBehaviour:
   size: {x: 0.03, y: 0.04, z: 0.2}
   direction: 0
   radiusSeparation: 0
+  alignedOnCenter: 1
 --- !u!1 &8222103858853156472
 GameObject:
   m_ObjectHideFlags: 0
@@ -2388,6 +2389,7 @@ MonoBehaviour:
   size: {x: 0.035, y: 0.04, z: 0.2}
   direction: 0
   radiusSeparation: 0
+  alignedOnCenter: 1
 --- !u!1 &8222103858853156474
 GameObject:
   m_ObjectHideFlags: 0
@@ -2437,6 +2439,7 @@ MonoBehaviour:
   size: {x: 0.05, y: 0.04, z: 0.3}
   direction: 0
   radiusSeparation: 0
+  alignedOnCenter: 1
 --- !u!1 &8222103858853156476
 GameObject:
   m_ObjectHideFlags: 0
@@ -2527,6 +2530,7 @@ MonoBehaviour:
   size: {x: 0.08, y: 0.1, z: 0.25}
   direction: 0
   radiusSeparation: 1
+  alignedOnCenter: 1
 --- !u!1 &8222103858853156480
 GameObject:
   m_ObjectHideFlags: 0
@@ -3152,6 +3156,7 @@ MonoBehaviour:
   size: {x: 0.03, y: 0.04, z: 0.2}
   direction: 0
   radiusSeparation: 0
+  alignedOnCenter: 1
 --- !u!1 &8222103858853156518
 GameObject:
   m_ObjectHideFlags: 0
@@ -3202,6 +3207,7 @@ MonoBehaviour:
   size: {x: 0.035, y: 0.04, z: 0.2}
   direction: 0
   radiusSeparation: 0
+  alignedOnCenter: 1
 --- !u!1 &8222103858853156520
 GameObject:
   m_ObjectHideFlags: 0
@@ -3251,6 +3257,7 @@ MonoBehaviour:
   size: {x: 0.05, y: 0.04, z: 0.3}
   direction: 0
   radiusSeparation: 0
+  alignedOnCenter: 1
 --- !u!1 &8222103858853156522
 GameObject:
   m_ObjectHideFlags: 0
@@ -7966,6 +7973,7 @@ MonoBehaviour:
   size: {x: 0.1, y: 0.001, z: 0.35}
   direction: 0
   radiusSeparation: 0
+  alignedOnCenter: 1
 --- !u!1 &8222103858853157250
 GameObject:
   m_ObjectHideFlags: 0
@@ -8110,6 +8118,7 @@ MonoBehaviour:
   size: {x: 0.05, y: 0.04, z: 0.32}
   direction: 0
   radiusSeparation: 0
+  alignedOnCenter: 1
 --- !u!1 &8222103858853157258
 GameObject:
   m_ObjectHideFlags: 0
@@ -8159,6 +8168,7 @@ MonoBehaviour:
   size: {x: 0.07, y: 0.06, z: 0.32}
   direction: 0
   radiusSeparation: 1
+  alignedOnCenter: 1
 --- !u!1 &8222103858853157260
 GameObject:
   m_ObjectHideFlags: 0
@@ -8271,6 +8281,7 @@ MonoBehaviour:
   size: {x: 0.05, y: 0.04, z: 0.32}
   direction: 0
   radiusSeparation: 0
+  alignedOnCenter: 1
 --- !u!1 &8222103858853157266
 GameObject:
   m_ObjectHideFlags: 0
@@ -8320,6 +8331,7 @@ MonoBehaviour:
   size: {x: 0.07, y: 0.06, z: 0.32}
   direction: 0
   radiusSeparation: 1
+  alignedOnCenter: 1
 --- !u!1 &8222103858853157268
 GameObject:
   m_ObjectHideFlags: 0
@@ -8373,6 +8385,7 @@ MonoBehaviour:
   size: {x: 0.1, y: 0.001, z: 0.35}
   direction: 0
   radiusSeparation: 0
+  alignedOnCenter: 1
 --- !u!1 &8222103858853157270
 GameObject:
   m_ObjectHideFlags: 0
@@ -13430,6 +13443,7 @@ MonoBehaviour:
   size: {x: 0.08, y: 0.1, z: 0.25}
   direction: 1
   radiusSeparation: 0
+  alignedOnCenter: 1
 --- !u!1 &8222103858853157280
 GameObject:
   m_ObjectHideFlags: 0
@@ -27780,19 +27794,22 @@ MonoBehaviour:
         m_PostInfinity: 2
         m_RotationOrder: 4
     inertiaConstraint:
-      movementInertia: 1
-      rotationInertia: 1
-      depthInertia: 0
-      centrifualAcceleration: 0
+      worldInertia: 1
       movementSpeedLimit:
         value: 5
         use: 1
       rotationSpeedLimit:
         value: 720
         use: 1
+      localInertia: 1
+      depthInertia: 0
+      centrifualAcceleration: 0
       particleSpeedLimit:
         value: 4
         use: 1
+      teleportMode: 0
+      teleportDistance: 0.5
+      teleportRotation: 90
     tetherConstraint:
       distanceCompression: 0.4
     distanceConstraint:
@@ -28194,19 +28211,22 @@ MonoBehaviour:
         m_PostInfinity: 2
         m_RotationOrder: 4
     inertiaConstraint:
-      movementInertia: 1
-      rotationInertia: 1
-      depthInertia: 0
-      centrifualAcceleration: 0
+      worldInertia: 1
       movementSpeedLimit:
         value: 5
         use: 1
       rotationSpeedLimit:
         value: 720
         use: 1
+      localInertia: 1
+      depthInertia: 0
+      centrifualAcceleration: 0
       particleSpeedLimit:
         value: 4
         use: 1
+      teleportMode: 0
+      teleportDistance: 0.5
+      teleportRotation: 90
     tetherConstraint:
       distanceCompression: 0.4
     distanceConstraint:
@@ -34134,19 +34154,22 @@ MonoBehaviour:
         m_PostInfinity: 2
         m_RotationOrder: 4
     inertiaConstraint:
-      movementInertia: 1
-      rotationInertia: 1
-      depthInertia: 1
-      centrifualAcceleration: 0
+      worldInertia: 1
       movementSpeedLimit:
         value: 5
         use: 1
       rotationSpeedLimit:
         value: 720
         use: 1
+      localInertia: 1
+      depthInertia: 1
+      centrifualAcceleration: 0
       particleSpeedLimit:
         value: 4
         use: 1
+      teleportMode: 0
+      teleportDistance: 0.5
+      teleportRotation: 90
     tetherConstraint:
       distanceCompression: 0.4
     distanceConstraint:

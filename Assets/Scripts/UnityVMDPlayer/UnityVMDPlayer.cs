@@ -48,6 +48,7 @@ namespace UnityChanDance.VMD
         int lastFrameNumber = -1;
         //FPSのずれによる非整数のフレームも計算する
         float internalFrameNumber = 0;
+        public float FrameFloat => internalFrameNumber;
         //以下はPlay時に初期化
         UpperBodyAnimation upperBodyAnimation;
         LowerBodyAnimation lowerBodyAnimation;

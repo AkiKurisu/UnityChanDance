@@ -2,6 +2,7 @@
   "dependencies": {
     "com.unity.addressables": "1.21.15",
     "com.unity.burst": "1.8.8",
+    "com.unity.cinemachine": "2.8.9",
     "com.unity.collab-proxy": "2.0.5",
     "com.unity.collections": "1.5.1",
     "com.unity.ide.rider": "3.0.24",

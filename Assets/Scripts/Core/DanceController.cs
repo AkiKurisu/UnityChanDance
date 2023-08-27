@@ -13,6 +13,8 @@ namespace UnityChanDance.Core
         [SerializeField]
         private UnityVMDPlayer vmdPlayer;
         [SerializeField]
+        private UnityVMDCamera vmdCamera;
+        [SerializeField]
         private StageDirector stageDirector;
         private void Awake()
         {
@@ -32,8 +34,17 @@ namespace UnityChanDance.Core
                 await Task.Yield();
             }
             var audioClip = DownloadHandlerAudioClip.GetContent(www);
-            Debug.Log(Path.Combine(GlobalPath.UserFolderPath, userConfig.VMDPath));
-            await vmdPlayer.PlayAsync(Path.Combine(GlobalPath.UserFolderPath, userConfig.VMDPath));
+            if (!string.IsNullOrEmpty(userConfig.CameraPath))
+            {
+                stageDirector.StopAutoCameraChange();
+                stageDirector.UseBuiltInCameraAnimation = false;
+                await vmdCamera.InitAsync(Path.Combine(GlobalPath.UserFolderPath, userConfig.CameraPath));
+                await vmdPlayer.PlayAsync(Path.Combine(GlobalPath.UserFolderPath, userConfig.VMDPath));
+            }
+            else
+            {
+                await vmdPlayer.PlayAsync(Path.Combine(GlobalPath.UserFolderPath, userConfig.VMDPath));
+            }
             stageDirector.PlayMusic(audioClip);
         }
     }

@@ -22,14 +22,14 @@ public class CameraSwitcher : MonoBehaviour
         followPoint = target.position;
 
         // Initialize DOF fx.
-//        var dofFx = GetComponentInChildren<DepthOfFieldScatter>();
-//        if (dofFx) dofFx.focalTransform = target;
+        //        var dofFx = GetComponentInChildren<DepthOfFieldScatter>();
+        //        if (dofFx) dofFx.focalTransform = target;
 
         // Start auto-changer if it's enabled.
         if (autoChange) StartAutoChange();
     }
 
-    void Update()
+    public void Tick()
     {
         // Update the follow point with the exponential easing function.
         var param = Mathf.Exp(-rotationSpeed * Time.deltaTime);

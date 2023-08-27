@@ -16,7 +16,7 @@ namespace UnityChanDance.Stage
         {
             tracker = new DepthVolumeTracker(
                 trackVolume,
-                 focusPoint
+                focusPoint
             );
         }
         private void Update()
@@ -31,14 +31,15 @@ namespace UnityChanDance.Stage
         private readonly DepthOfField depthOfField;
         public DepthVolumeTracker(Volume volume, Transform focusPoint)
         {
-            camera = UnityEngine.Camera.main.transform;
+            camera = Camera.main.transform;
             this.focusPoint = focusPoint;
-            volume.profile.TryGet<DepthOfField>(out depthOfField);
+            volume.profile.TryGet(out depthOfField);
         }
         public void Tick(float deltaTime)
         {
-            var depth = (focusPoint.position - camera.position).magnitude;
-            depthOfField.focusDistance.value = Mathf.Lerp(depthOfField.focusDistance.value, depth, deltaTime);
+            Vector3 subtract = focusPoint.position - camera.position;
+            subtract.y = 0;
+            depthOfField.focusDistance.value = Mathf.Lerp(depthOfField.focusDistance.value, subtract.magnitude, deltaTime);
         }
         public void Set(float value)
         {

@@ -1,4 +1,5 @@
 {
     "AudioPath": "CHUNG HA - Snapping.wav",
-    "VMDPath": "Snapping.vmd"
+    "VMDPath": "Snapping.vmd",
+    "CameraPath": "Snapping Camera.vmd"
 }

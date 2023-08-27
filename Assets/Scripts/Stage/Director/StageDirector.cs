@@ -8,7 +8,8 @@ public class StageDirector : MonoBehaviour
 {
     // Prefabs.
     public GameObject musicPlayerPrefab;
-    public GameObject mainCameraRigPrefab;
+    [SerializeField]
+    private GameObject cameraRig;
     public GameObject[] prefabsNeedsActivation;
     public GameObject[] miscPrefabs;
 
@@ -23,12 +24,12 @@ public class StageDirector : MonoBehaviour
     CameraSwitcher mainCameraSwitcher;
     ScreenOverlay[] screenOverlays;
     private readonly List<IActivateProps> props = new();
+    [field: SerializeField]
+    public bool UseBuiltInCameraAnimation { get; set; } = true;
     void Awake()
     {
         // Instantiate the prefabs.
         musicPlayer = Instantiate(musicPlayerPrefab);
-
-        var cameraRig = Instantiate(mainCameraRigPrefab);
         mainCameraSwitcher = cameraRig.GetComponentInChildren<CameraSwitcher>();
         screenOverlays = cameraRig.GetComponentsInChildren<ScreenOverlay>();
 
@@ -38,6 +39,7 @@ public class StageDirector : MonoBehaviour
     }
     private void Update()
     {
+        if (UseBuiltInCameraAnimation) mainCameraSwitcher?.Tick();
         foreach (var so in screenOverlays)
         {
             so.intensity = overlayIntensity;
@@ -61,19 +63,18 @@ public class StageDirector : MonoBehaviour
 
     public void SwitchCamera(int index)
     {
-        if (mainCameraSwitcher)
-            mainCameraSwitcher.ChangePosition(cameraPoints[index], true);
+        if (UseBuiltInCameraAnimation)
+            mainCameraSwitcher?.ChangePosition(cameraPoints[index], true);
     }
 
     public void StartAutoCameraChange()
     {
-        if (mainCameraSwitcher)
-            mainCameraSwitcher.StartAutoChange();
+        if (UseBuiltInCameraAnimation)
+            mainCameraSwitcher?.StartAutoChange();
     }
 
     public void StopAutoCameraChange()
     {
-        if (mainCameraSwitcher)
-            mainCameraSwitcher.StopAutoChange();
+        mainCameraSwitcher?.StopAutoChange();
     }
 }
